@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2026-01-05T09:25:15-05:00       *-->
+<!--*   A recent stable commit (2022-07-01):   *-->
+<!--* 6c761d3dba23af92cba35001c852aac04ae99a5f *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html xmlns:pi="http://pretextbook.org/2020/pretext/internal">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WeBWorK in PreTeXt in Runestone</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reset.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reveal.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/theme/serif.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reveal.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/plugin/math/math.js"></script><style>
+ul {
+  display: block !important;
+}
+.reveal img {
+  border: 0.5px !important;
+  border-radius: 2px 10px 2px;
+  padding: 4px;
+}
+.reveal pre {
+  box-shadow: none;
+  line-height: 1;
+  font-size: inherit;
+  width: auto;
+  margin: inherit;
+}
+.reveal pre code {
+  display: block;
+  padding: 0;
+  overflow: unset;
+  max-height: unset;
+  word-wrap: normal;
+}
+.definition-like,.theorem-like,.project-like {
+  border-width: 0.5px;
+  border-style: solid;
+  border-radius: 2px 10px 2px;
+  padding: 1%;
+  margin-bottom: var(--r-block-margin);
+}
+.definition-like {
+  background: #006080;
+  background: color-mix(in srgb, var(--r-background-color) 75%, #006080);
+}
+.theorem-like {
+  background: #ff000010;
+  background:  color-mix(in srgb, var(--r-background-color) 75%, #aa0000);
+}
+.proof-like {
+  background: #ffffff;
+  background:  color-mix(in srgb, var(--r-background-color) 75%, #aaaaaa);
+}
+.project-like {
+  background: #60800010;
+  background:  color-mix(in srgb, var(--r-background-color) 75%, #608000);
+}
+.code-inline {
+  background: #60800010;
+  background:  color-mix(in srgb, var(--r-background-color) 75%, var(--r-link-color));
+  padding: 0 3px;
+  border: 1px solid;
+  margin: 3px;
+  display: inline-block;
+}
+.sagecell_sessionOutput {
+  background: white;
+  color: black;
+  border: 0.5px solid var(--r-main-color);
+}
+
+.program {
+  background: #60800010;
+  background:  color-mix(in srgb, var(--r-background-color) 75%, var(--r-link-color));
+  max-height: 450px;
+  overflow: auto;
+  border: 0.5px solid var(--r-main-color);
+}
+.ptx-sagecell, .reveal .program {
+  font-size: calc(var(--r-main-font-size) * 0.6);
+}
+
+
+.ptx-content :is(.image-box, .audio-box, .video-box, .asymptote-box) {
+  position: relative;
+}
+
+.ptx-content iframe.asymptote, .ptx-content iframe.asymptote, .ptx-content .video-box .video, .ptx-content .video-box .video-poster {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+code[class*="language-"], pre[class*="language-"] {
+  padding: 0;
+  line-height: 1.2;
+}
+
+dfn {
+  font-weight: bold;
+}
+.ptx-content ol.no-marker,
+.ptx-content ul.no-marker,
+.ptx-content li.no-marker {
+    list-style-type: none;
+}
+
+.ptx-content ol.decimal {
+    list-style-type: decimal;
+}
+.ptx-content ol.lower-alpha {
+    list-style-type: lower-alpha;
+}
+.ptx-content ol.upper-alpha {
+    list-style-type: upper-alpha;
+}
+.ptx-content ol.lower-roman {
+    list-style-type: lower-roman;
+}
+.ptx-content ol.upper-roman {
+    list-style-type: upper-roman;
+}
+.ptx-content ul.disc {
+    list-style-type: disc;
+}
+.ptx-content ul.square {
+    list-style-type: square;
+}
+.ptx-content ul.circle {
+    list-style-type: circle;
+}
+.ptx-content ol.no-marker,
+.ptx-content ul.no-marker {
+    list-style-type: none;
+}
+.ptx-content .cols1 li,
+.ptx-content .cols2 li,
+.ptx-content .cols3 li,
+.ptx-content .cols4 li,
+.ptx-content .cols5 li,
+.ptx-content .cols6 li {
+    float: left;
+    padding-right:2em;
+}
+
+/* make small images full-width in #sidebyside */
+/* could improve with a .sidebyside class */
+div[style*="display:table-cell"] img {
+    width: 100%;
+}
+          </style>
+</head>
+<body><div class="reveal ptx-content">
+<div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\definiteintegral}[4]{\int_{#1}^{#2}\,#3\,d#4}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="slides">
+<section><section><h1>WeBWorK in PreTeXt in Runestone</h1>
+<h2>Online Engagement and Assessment</h2>
+<table>
+<tr><th align="center" style="border-bottom: 0px;">Chrissy Safranski</th></tr>
+<tr><td align="center" style="border-bottom: 0px;">Franciscan University of Steubenville</td></tr>
+<tr><td align="center"></td></tr>
+</table>
+<h4>JMM 2026</h4>
+<h4><div class="date">January 6, 2026</div></h4></section></section><section><section><h1></h1></section><section><h3>Starting with Gratitude</h3>
+<div align="left"><div style="display:table;margin-left:5%;margin-right:5%;" class="sidebyside"><div style="display:table-cell;width:100%;vertical-align:top;"><p><ul class="disc" id="root-1-2-4-1-2-1-1">
+<li>
+<p>Davide Cervone, Michael Gage, Danny Glin, Alex Jordan, Gavin LaRose, Paul Pearson, Arnold Pizer, John Travis, and many others</p>
+<p> </p>
+</li>
+<li>
+<p>Matt Boelkins</p>
+<p> </p>
+</li>
+<li>
+<p>David Austin, Rob Beezer, Tien Chih, Steven Clontz, David Farmer, Oscar Levin, Vilma Mesa, Brad Miller, and many others</p>
+<p> </p>
+</li>
+</ul></p></div></div></div></section><section><h3>Active Learning</h3>
+<div align="left"><div style="display:table;margin-left:5%;margin-right:5%;" class="sidebyside"><div style="display:table-cell;width:100%;vertical-align:top;"><p><ul class="disc" id="root-1-2-4-2-2-1-1">
+<li class="fragment">
+<p>Two unavoidable facts about teaching: active learning is better, and technology is ubiquitous.  Now combine those with the underlying principle that the construction of teaching and learning materials has a strong influence on how the material is taught.  The conclusion is that we desperately need textbooks that beyond just supporting active learning, actually induce active learning, and those textbooks should be seamlessly integrated with technology that further supports active learning.</p>
+<p>--David Farmer, American Institute of Mathematics</p>
+</li>
+<li class="fragment"><p>True for more than teaching</p></li>
+<li class="fragment"><p>Commercial publishers</p></li>
+</ul></p></div></div></div></section><section><h3>WeBWorK in PreTeXt books</h3>
+<div align="left"><div style="display:table;margin-left:5%;margin-right:5%;" class="sidebyside"><div style="display:table-cell;width:100%;vertical-align:top;"><p><ul class="disc" id="root-1-2-4-3-2-1-1">
+<li class="fragment">
+<p><a class="external" href="https://activecalculus.org/single2e/frontmatter.html" target="_blank">Active Calculus, Single Variable</a></p>
+<p> </p>
+</li>
+<li class="fragment">
+<p>Discrete Mathematics: An Open Introduction</p>
+<p>APEX Calculus</p>
+<p>Open Resources for Community College Algebra (ORCCA)</p>
+</li>
+</ul></p></div></div></div></section><section><h3>Student work, tracked for a grade</h3>
+<div align="left"><div style="display:table;margin-left:5%;margin-right:5%;" class="sidebyside"><div style="display:table-cell;width:100%;vertical-align:top;"><p><ul class="disc" id="root-1-2-4-4-2-1-1">
+<li><p><a class="external" href="runestone.academy/ns/books/published/ac-single/frontmatter.html?mode=browsing" target="_blank">Active Calculus, Single Variable</a></p></li>
+<li><p>What is Runestone?</p></li>
+<li><p>Demo of some WeBWorK problems in Active Calculus in Runestone</p></li>
+</ul></p></div></div></div></section><section><h3>How?</h3>
+<div align="left"><div style="display:table;margin-left:5%;margin-right:5%;" class="sidebyside"><div style="display:table-cell;width:100%;vertical-align:top;"><p><ul class="disc" id="root-1-2-4-5-2-1-1">
+<li class="fragment">
+<p>Point to an OPL address</p>
+<p><div style="display:table;margin-left:0%;margin-right:0%;" class="sidebyside">
+<div style="display:table-cell;width:10%;vertical-align:top;"><p><a class="external" href="https://github.com/Tanaquil18/matrixcalculations/blob/main/source/interactive-exercises/ww-largerinverses.ptx" target="_blank">Source</a></p></div>
+<div style="display:table-cell;width:40%;vertical-align:top;"><p><a class="external" href="https://tanaquil18.github.io/matrixcalculations/sec-largerinverses.html#ww-largerinverses" target="_blank">Rendered (Ex. 2,3,4)</a></p></div>
+</div></p>
+</li>
+<li class="fragment">
+<p>Written in PreTeXt-WeBWorK</p>
+<p><div style="display:table;margin-left:0%;margin-right:0%;" class="sidebyside">
+<div style="display:table-cell;width:10%;vertical-align:top;"><p><a class="external" href="https://github.com/Tanaquil18/matrixcalculations/blob/main/source/interactive-exercises/ww-row-ops.ptx" target="_blank">Source</a></p></div>
+<div style="display:table-cell;width:40%;vertical-align:top;"><p><a class="external" href="https://tanaquil18.github.io/matrixcalculations/sec-row-ops.html#ww-row-ops" target="_blank">Rendered</a></p></div>
+</div></p>
+</li>
+<li class="fragment">
+<p>Include a local .pg file</p>
+<p><div style="display:table;margin-left:0%;margin-right:0%;" class="sidebyside">
+<div style="display:table-cell;width:10%;vertical-align:top;"><p><a class="external" href="https://github.com/Tanaquil18/matrixcalculations/blob/main/source/interactive-exercises/ww-largerinverses.ptx" target="_blank">Source</a></p></div>
+<div style="display:table-cell;width:40%;vertical-align:top;"><p><a class="external" href="https://tanaquil18.github.io/matrixcalculations/sec-largerinverses.html#ww-largerinverses" target="_blank">Rendered (Ex. 1,5)</a></p></div>
+</div></p>
+</li>
+</ul></p></div></div></div></section><section><h3>Pros and Cons</h3>
+<div align="left"><div style="display:table;margin-left:5%;margin-right:5%;" class="sidebyside"><div style="display:table-cell;width:100%;vertical-align:top;"><p><ul class="disc" id="root-1-2-4-6-2-1-1">
+<li>
+<p>Tightly integrated: notation, language, and learning objectives</p>
+<p> </p>
+</li>
+<li>
+<p>Students like having everything in one place</p>
+<p> </p>
+</li>
+<li>
+<p>Not fully featured</p>
+<p> </p>
+</li>
+<li>
+<p>Much smaller selection of problems</p>
+<p> </p>
+</li>
+</ul></p></div></div></div></section><section><h3>Coming Attractions</h3>
+<div align="left"><div style="display:table;margin-left:5%;margin-right:5%;" class="sidebyside"><div style="display:table-cell;width:100%;vertical-align:top;"><p><ul class="disc" id="root-1-2-4-7-2-1-1">
+<li>
+<p>Problem bank books</p>
+<p> </p>
+</li>
+<li>
+<p>Doenet</p>
+<p> </p>
+</li>
+<li>
+<p>STACK</p>
+<p> </p>
+</li>
+</ul></p></div></div></div></section><section><h3>Ending with Gratitude</h3>
+<div align="left"><div style="display:table;margin-left:5%;margin-right:5%;" class="sidebyside"><div style="display:table-cell;width:100%;vertical-align:top;"><p><ul class="disc" id="root-1-2-4-8-2-1-1">
+<li>
+<p>Davide Cervone, Michael Gage, Danny Glin, Alex Jordan, Gavin LaRose, Paul Pearson, Arnold Pizer, John Travis, and many others</p>
+<p> </p>
+</li>
+<li>
+<p>Matt Boelkins</p>
+<p> </p>
+</li>
+<li>
+<p>David Austin, Rob Beezer, Tien Chih, Steven Clontz, David Farmer, Oscar Levin, Vilma Mesa, Brad Miller, and many others</p>
+<p> </p>
+</li>
+<li><p>The organizers</p></li>
+<li><p>You</p></li>
+</ul></p></div></div></div></section><section><h3>Questions and Comments?</h3>
+<div align="left"><p></p></div></section></section>
+</div>
+</div></body>
+<script>
+Reveal.initialize({
+  controls: true,
+  controlsTutorial: true,
+  controlsLayout: 'bottom-right',
+  controlsBackArrows: 'faded',
+  navigationMode: 'default',
+  progress: false,
+  center: false,
+  hash: true,
+  transition: 'fade',
+  width: "100%",
+  height: "100%",
+  margin: "0.025",
+  math: {
+    mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+    config: 'TeX-AMS_HTML-full',
+    // other options are passed into MathJax.Hub.Config()
+    tex2jax: {
+      inlineMath:  [['\\(','\\)']],
+      displayMath: [],
+    }
+  },
+  plugins: [ RevealMath ]
+});
+</script>
+</html>

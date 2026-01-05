@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--********************************************************************
+Copyright 2019 Robert A. Beezer
+This file is part of PreTeXt.
+PreTeXt is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 or version 3 of the
+License (at your option).
+PreTeXt is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
+*********************************************************************-->
+<pretext>
+
+    <docinfo>
+        <macros>
+        \newcommand{\definiteintegral}[4]{\int_{#1}^{#2}\,#3\,d#4}
+        </macros>
+    </docinfo>
+
+    <slideshow>
+        <title>WeBWorK in <pretext/> in Runestone</title>
+        <subtitle>Online Engagement and Assessment</subtitle>
+
+        <frontmatter>
+            <titlepage>
+                <author>
+                    <personname>Chrissy Safranski</personname>
+                    <institution>Franciscan University of Steubenville</institution>
+                </author>
+                <event>JMM 2026</event>
+                <date>January 6, 2026</date>
+            </titlepage>
+        </frontmatter>
+
+        <section>
+            <slide>
+                <title>Starting with Gratitude</title>
+
+                <sidebyside widths="90%">
+                    <p><ul>
+                    <li><p>Davide Cervone, Michael Gage, Danny Glin, Alex Jordan,
+                        Gavin LaRose, Paul Pearson, Arnold Pizer, John Travis, and many others</p>
+                        <p><nbsp/></p>
+                    </li>
+                    <li><p>Matt Boelkins</p><p><nbsp/></p></li>
+                    <li><p>David Austin, Rob Beezer, Tien Chih, Steven Clontz, David Farmer, Oscar Levin, Vilma Mesa, Brad Miller,
+                        and many others</p><p><nbsp/></p></li>
+                </ul></p>
+
+                </sidebyside>
+            </slide>
+            <slide>
+                <title>Active Learning</title>
+
+                <sidebyside widths="90%">
+                    <p><ul pause="yes">
+                        <li>
+                            <p>
+                                Two unavoidable facts about teaching: active learning is better, and technology is ubiquitous.  Now combine those with
+                                the underlying principle that the construction of teaching and learning materials has
+                                a strong influence on how the material is taught.  The conclusion is that we desperately need textbooks that beyond just supporting active learning, actually induce active learning, and those textbooks should be seamlessly integrated with technology that further supports active learning.
+                            </p>
+                            <p>
+                                --David Farmer, American Institute of Mathematics
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                True for more than teaching
+                            </p>
+                        <!-- Say here that I want to go even farther than David did - all learning is achieved actively,
+                         and interactive course materials are a great asset to helping students learn,
+                         even apart from classroom pedagogy.  -->
+                        </li>
+                        <li>
+                            <p>
+                                Commercial publishers
+                            </p>
+                        <!-- Many commercial publishers provide textbooks with interactive, autograded homework exercises. -->
+                        </li>
+                    </ul></p>
+                </sidebyside>
+            </slide>
+            <slide>
+                <title>WeBWorK in <pretext/> books</title>
+                <sidebyside widths="90%">
+                    <p><ul pause="yes">
+                        <li>
+                            <p>
+                                <url href="https://activecalculus.org/single2e/frontmatter.html">Active Calculus, Single Variable</url>
+                            </p>
+                            <p><nbsp/></p>
+                        </li>
+                        <li>
+                            <p>
+                                Discrete Mathematics: An Open Introduction
+                            </p>
+                            <p>
+                                APEX Calculus
+                            </p>
+                            <p>
+                                Open Resources for Community College Algebra (ORCCA)
+                            </p>
+                        </li>
+                    </ul></p>
+                </sidebyside>
+            </slide>
+            <slide>
+                <title>Student work, tracked for a grade</title>
+                <sidebyside widths="90%">
+                    <p><ul>
+                        <li>
+                            <p>
+                                <url href="runestone.academy/ns/books/published/ac-single/frontmatter.html?mode=browsing">Active Calculus, Single Variable</url>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                What is Runestone?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Demo of some WeBWorK problems in Active Calculus in Runestone
+                            </p>
+                        </li>
+                    </ul></p>
+                </sidebyside>
+            </slide>
+            <slide>
+                <title>How?</title>
+                <sidebyside widths="90%">
+                    <p><ul pause="yes">
+                        <li>
+                            <p>
+                                Point to an OPL address
+                            </p>
+                            <p>
+                                <sidebyside widths="10% 40%" margins="0% 0%">
+                                    <p><url href="https://github.com/Tanaquil18/matrixcalculations/blob/main/source/interactive-exercises/ww-largerinverses.ptx">Source</url></p>
+                                    <p><url href="https://tanaquil18.github.io/matrixcalculations/sec-largerinverses.html#ww-largerinverses">Rendered (Ex. 2,3,4)</url></p>
+                                </sidebyside>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Written in PreTeXt-WeBWorK
+                            </p>
+                            <p>
+                                <sidebyside widths="10% 40%" margins="0% 0%">
+                                    <p><url href="https://github.com/Tanaquil18/matrixcalculations/blob/main/source/interactive-exercises/ww-row-ops.ptx">Source</url></p>
+                                    <p><url href="https://tanaquil18.github.io/matrixcalculations/sec-row-ops.html#ww-row-ops">Rendered</url></p>
+                                </sidebyside>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Include a local .pg file
+                            </p>
+                            <p>
+                                <sidebyside widths="10% 40%" margins="0% 0%">
+                                    <p><url href="https://github.com/Tanaquil18/matrixcalculations/blob/main/source/interactive-exercises/ww-largerinverses.ptx">Source</url></p>
+                                    <p><url href="https://tanaquil18.github.io/matrixcalculations/sec-largerinverses.html#ww-largerinverses">Rendered (Ex. 1,5)</url></p>
+                                </sidebyside>
+                            </p>
+                        </li>
+                    </ul></p>
+                </sidebyside>
+            </slide>
+            <slide>
+                <title>Pros and Cons</title>
+                <sidebyside widths="90%">
+                    <p><ul>
+                        <li>
+                            <p>
+                                Tightly integrated: notation, language, and learning objectives
+                            </p><p><nbsp/></p>
+                        </li>
+                        <li>
+                            <p>
+                                Students like having everything in one place
+                            </p><p><nbsp/></p>
+                        </li>
+                        <li>
+                            <p>
+                                Not fully featured
+                            </p><p><nbsp/></p>
+                        </li>
+                        <li>
+                            <p>
+                                Much smaller selection of problems
+                            </p><p><nbsp/></p>
+                        </li>
+                    </ul></p>
+                </sidebyside>
+            </slide>
+            <slide>
+                <title>Coming Attractions</title>
+
+                <sidebyside widths="90%">
+                    <p><ul>
+                        <li>
+                            <p>
+                                Problem bank books
+                            </p><p><nbsp/></p>
+                            <!-- Show Active Calculus Companion.
+                             Also, an assignment in Runestone containing problems from both ACS and ACC?-->
+                        </li>
+                    <li><p>Doenet</p><p><nbsp/></p>
+                    </li>
+                    <li><p>STACK</p><p><nbsp/></p>
+                    </li>
+                </ul></p>
+
+                </sidebyside>
+            </slide>
+            <slide>
+                <title>Ending with Gratitude</title>
+
+                <sidebyside widths="90%">
+                    <p><ul>
+                    <li><p>Davide Cervone, Michael Gage, Danny Glin, Alex Jordan,
+                        Gavin LaRose, Paul Pearson, Arnold Pizer, John Travis, and many others</p>
+                        <p><nbsp/></p>
+                    </li>
+                    <li><p>Matt Boelkins</p><p><nbsp/></p></li>
+                    <li><p>David Austin, Rob Beezer, Tien Chih, Steven Clontz, David Farmer, Oscar Levin, Vilma Mesa, Brad Miller,
+                        and many others</p><p><nbsp/></p></li>
+                    <li>
+                        <p>
+                            The organizers
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            You
+                        </p>
+                    </li>
+                </ul></p>
+
+                </sidebyside>
+            </slide>
+            <slide>
+                <title>Questions and Comments?</title>
+                <p/>
+            </slide>
+        </section>
+
+
+    </slideshow>
+</pretext>

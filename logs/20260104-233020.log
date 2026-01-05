@@ -1,0 +1,12 @@
+INFO    : Building target slides
+INFO    : XSL conversion of C:\Users\CSafranski\pretext projects\jmm2026slides\new-pretext-project\source\main.ptx by C:\Users\CSafranski\.ptx\2.34.0\core\xsl\utilities\pretext-enhanced-source.xsl
+ERROR   : Error assembling source file: Opening and ending tag mismatch: ul line 221 and li, line 226, column 26 (file:/C:/Users/CSafranski/pretext%20projects/jmm2026slides/new-pretext-project/source/main.ptx, line 226)
+CRITICAL: XML syntax for source file is invalid
+INFO    : ------------------------
+CRITICAL: Failed to build without errors.  Exiting...
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------
