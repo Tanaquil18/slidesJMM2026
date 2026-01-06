@@ -61,18 +61,19 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
                     <p><ul pause="yes">
                         <li>
                             <p>
-                                Two unavoidable facts about teaching: active learning is better, and technology is ubiquitous.  Now combine those with
+                                <!-- Two unavoidable facts about teaching: active learning is better, and technology is ubiquitous.  Now combine those with
                                 the underlying principle that the construction of teaching and learning materials has
-                                a strong influence on how the material is taught.  The conclusion is that we desperately need textbooks that beyond just supporting active learning, actually induce active learning, and those textbooks should be seamlessly integrated with technology that further supports active learning.
+                                a strong influence on how the material is taught.  The conclusion is that -->
+                                [W]e desperately need textbooks that beyond just supporting active learning, actually induce active learning, and those textbooks should be seamlessly integrated with technology that further supports active learning.
                             </p>
                             <p>
                                 --David Farmer, American Institute of Mathematics
-                            </p>
+                            </p><p><nbsp/></p>
                         </li>
                         <li>
                             <p>
                                 True for more than teaching
-                            </p>
+                            </p><p><nbsp/></p>
                         <!-- Say here that I want to go even farther than David did - all learning is achieved actively,
                          and interactive course materials are a great asset to helping students learn,
                          even apart from classroom pedagogy.  -->
@@ -89,7 +90,7 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
             <slide>
                 <title>WeBWorK in <pretext/> books</title>
                 <sidebyside widths="90%">
-                    <p><ul pause="yes">
+                    <p><ul>
                         <li>
                             <p>
                                 <url href="https://activecalculus.org/single2e/frontmatter.html">Active Calculus, Single Variable</url>
@@ -99,10 +100,14 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
                         <li>
                             <p>
                                 Discrete Mathematics: An Open Introduction
-                            </p>
+                            </p><p><nbsp/></p>
+                        </li>
+                        <li>
                             <p>
                                 APEX Calculus
-                            </p>
+                            </p><p><nbsp/></p>
+                        </li>
+                        <li>
                             <p>
                                 Open Resources for Community College Algebra (ORCCA)
                             </p>
@@ -116,18 +121,18 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
                     <p><ul>
                         <li>
                             <p>
-                                <url href="runestone.academy/ns/books/published/ac-single/frontmatter.html?mode=browsing">Active Calculus, Single Variable</url>
-                            </p>
+                                What is Runestone?
+                            </p><p><nbsp/></p>
                         </li>
                         <li>
                             <p>
-                                What is Runestone?
-                            </p>
+                                <url href="https://runestone.academy/ns/books/published/ac-single/frontmatter.html?mode=browsing">Active Calculus, Single Variable</url>
+                            </p><p><nbsp/></p>
                         </li>
                         <li>
                             <p>
                                 Demo of some WeBWorK problems in Active Calculus in Runestone
-                            </p>
+                            </p><p><nbsp/></p>
                         </li>
                     </ul></p>
                 </sidebyside>
@@ -135,13 +140,13 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
             <slide>
                 <title>How?</title>
                 <sidebyside widths="90%">
-                    <p><ul pause="yes">
+                    <p><ul>
                         <li>
                             <p>
                                 Point to an OPL address
                             </p>
                             <p>
-                                <sidebyside widths="10% 40%" margins="0% 0%">
+                                <sidebyside widths="20% 50%" margins="2% 0%">
                                     <p><url href="https://github.com/Tanaquil18/matrixcalculations/blob/main/source/interactive-exercises/ww-largerinverses.ptx">Source</url></p>
                                     <p><url href="https://tanaquil18.github.io/matrixcalculations/sec-largerinverses.html#ww-largerinverses">Rendered (Ex. 2,3,4)</url></p>
                                 </sidebyside>
@@ -152,7 +157,7 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
                                 Written in PreTeXt-WeBWorK
                             </p>
                             <p>
-                                <sidebyside widths="10% 40%" margins="0% 0%">
+                                <sidebyside widths="10% 40%" margins="2% 0%">
                                     <p><url href="https://github.com/Tanaquil18/matrixcalculations/blob/main/source/interactive-exercises/ww-row-ops.ptx">Source</url></p>
                                     <p><url href="https://tanaquil18.github.io/matrixcalculations/sec-row-ops.html#ww-row-ops">Rendered</url></p>
                                 </sidebyside>
@@ -163,7 +168,7 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
                                 Include a local .pg file
                             </p>
                             <p>
-                                <sidebyside widths="10% 40%" margins="0% 0%">
+                                <sidebyside widths="10% 40%" margins="2% 0%">
                                     <p><url href="https://github.com/Tanaquil18/matrixcalculations/blob/main/source/interactive-exercises/ww-largerinverses.ptx">Source</url></p>
                                     <p><url href="https://tanaquil18.github.io/matrixcalculations/sec-largerinverses.html#ww-largerinverses">Rendered (Ex. 1,5)</url></p>
                                 </sidebyside>
@@ -207,13 +212,19 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
                         <li>
                             <p>
                                 Problem bank books
+                            </p>
+                            <p>
+                                <sidebyside widths="10% 40%" margins="0% 0%">
+                                    <p><url href="https://github.com/OpenMathBooks/active-calculus-companion/blob/main/source/sec-2-3-prod-quot.xml">Source</url></p>
+                                    <p><url href="https://openmathbooks.org/active-calculus-companion/frontmatter.html">Rendered</url></p>
+                                </sidebyside>
                             </p><p><nbsp/></p>
                             <!-- Show Active Calculus Companion.
                              Also, an assignment in Runestone containing problems from both ACS and ACC?-->
                         </li>
-                    <li><p>Doenet</p><p><nbsp/></p>
-                    </li>
                     <li><p>STACK</p><p><nbsp/></p>
+                    </li>
+                    <li><p>Doenet</p><p><nbsp/></p>
                     </li>
                 </ul></p>
 
