@@ -27,14 +27,14 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
         <subtitle>Online Engagement and Assessment</subtitle>
 
         <frontmatter>
-            <titlepage>
+            <bibinfo>
                 <author>
                     <personname>Chrissy Safranski</personname>
                     <institution>Franciscan University of Steubenville</institution>
                 </author>
                 <event>JMM 2026</event>
                 <date>January 6, 2026</date>
-            </titlepage>
+            </bibinfo>
         </frontmatter>
 
         <section>
@@ -154,23 +154,23 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
                         </li>
                         <li>
                             <p>
-                                Written in PreTeXt-WeBWorK
-                            </p>
-                            <p>
-                                <sidebyside widths="10% 40%" margins="2% 0%">
-                                    <p><url href="https://github.com/Tanaquil18/matrixcalculations/blob/main/source/interactive-exercises/ww-row-ops.ptx">Source</url></p>
-                                    <p><url href="https://tanaquil18.github.io/matrixcalculations/sec-row-ops.html#ww-row-ops">Rendered</url></p>
-                                </sidebyside>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
                                 Include a local .pg file
                             </p>
                             <p>
                                 <sidebyside widths="10% 40%" margins="2% 0%">
                                     <p><url href="https://github.com/Tanaquil18/matrixcalculations/blob/main/source/interactive-exercises/ww-largerinverses.ptx">Source</url></p>
                                     <p><url href="https://tanaquil18.github.io/matrixcalculations/sec-largerinverses.html#ww-largerinverses">Rendered (Ex. 1,5)</url></p>
+                                </sidebyside>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Written in a PreTeXt-WeBWorK hybrid format
+                            </p>
+                            <p>
+                                <sidebyside widths="10% 40%" margins="2% 0%">
+                                    <p><url href="https://github.com/Tanaquil18/matrixcalculations/blob/main/source/interactive-exercises/ww-row-ops.ptx">Source</url></p>
+                                    <p><url href="https://tanaquil18.github.io/matrixcalculations/sec-row-ops.html#ww-row-ops">Rendered</url></p>
                                 </sidebyside>
                             </p>
                         </li>
